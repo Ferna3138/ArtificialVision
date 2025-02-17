@@ -2,11 +2,11 @@
 
 The main issue with the Stereo System we mentioned before is that we assume that we are working with a known fixed disparity, which might not be the case if we are not working with a Stereo Vision camera. If we were to take two pictures of an object from two random unknown positions, if we know the intrinsic parameters of the cameras, we can compute the translation and rotation of one camera with respect to the other and therefore, we can compute a 3D reconstruction of the object. This process is known as *Uncalibrated Stereo*.
 
-![Uncalibrated Stereo Left](Images/UncalibratedTheory/Uncalibratedleft.png)
+![Uncalibrated Stereo Left](images/UncalibratedTheory/Uncalibrated%20left.png)
 
-![Uncalibrated Stereo Right](Images/UncalibratedTheory/Uncalibratedright.png)
+![Uncalibrated Stereo Right](images/UncalibratedTheory/Uncalibrated%20right.png)
 
-![Uncalibrated Stereo Overview](Images/UncalibratedTheory/UncalibratedScenario.png)
+![Uncalibrated Stereo Overview](images/UncalibratedTheory/Uncalibrated%20Scenario.png)
 
 We can define the set of corresponding features (at least 8) in the left and right images: $(u_l^{(m)}, v_l^{(m)})$ and $(u_r^{(m)}, v_r^{(m)})$, these features can be extracted using SIFT, for example. Once found, we can find the relative rotation $R$ and translation $t$. Once found, this uncalibrated stereo system becomes calibrated.
 
@@ -26,7 +26,7 @@ We can compute a normal vector $n$, which is the cross product between the unkno
 n = t \times X_l
 ```
 
-![Epipolar Constraint](Images/UncalibratedTheory/Epipolar%20Constraint.png)
+![Epipolar Constraint](images/UncalibratedTheory/Epipolar%20Constraint.png)
 
 This normal vector should be perpendicular to $X_l$, so we use it as the epipolar constraint:
 
