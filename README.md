@@ -39,6 +39,8 @@ In cases where calibration is unavailable, uncalibrated stereo techniques rely o
 - Computing correspondences between stereo images.
 - Estimating the fundamental and essential matrices to derive epipolar constraints.
 
+More in-depth theory in ![Uncalibrated Stereo](UncalibratedStereo.md)
+
 ### Homography
 
 Homography is a transformation that relates two planar views of the same scene. It is widely used for:
