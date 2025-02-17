@@ -2,10 +2,10 @@
 
 The linear camera model allows us to calculate the projection of a point $P$ in camera space, we now need a method to estimate the projection matrix. Doing so requires an object of known geometry, for example, a cube.
 
-<img src="images/CameraCalibrationTheory/Digital_Cube.png" width="40%">  
+<img src="images/CameraCalibrationTheory/Digital_Cube.png" width="20%">  
 **Figure 1:** Digital Cube
 
-<img src="images/CameraCalibrationTheory/cube_photo.png" width="40%">  
+<img src="images/CameraCalibrationTheory/cube_photo.png" width="20%">  
 **Figure 2:** Cube Photo
 
 In Figure 1, we have a cube of which we know all its dimensions and the position of every point on its surface.
