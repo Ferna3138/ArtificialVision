@@ -2,11 +2,11 @@
 
 The main issue with the Stereo System we mentioned before is that we assume that we are working with a known fixed disparity, which might not be the case if we are not working with a Stereo Vision camera. If we were to take two pictures of an object from two random unknown positions, if we know the intrinsic parameters of the cameras, we can compute the translation and rotation of one camera with respect to the other and therefore, we can compute a 3D reconstruction of the object. This process is known as *Uncalibrated Stereo*.
 
-![Uncalibrated Stereo Left](Images/UncalibratedTheory/Uncalibrated%20left.png)
+![Uncalibrated Stereo Left](Images/UncalibratedTheory/Uncalibratedleft.png)
 
-![Uncalibrated Stereo Right](Images/UncalibratedTheory/Uncalibrated%20right.png)
+![Uncalibrated Stereo Right](Images/UncalibratedTheory/Uncalibratedright.png)
 
-![Uncalibrated Stereo Overview](Images/UncalibratedTheory/Uncalibrated%20Scenario.png)
+![Uncalibrated Stereo Overview](Images/UncalibratedTheory/UncalibratedScenario.png)
 
 We can define the set of corresponding features (at least 8) in the left and right images: $(u_l^{(m)}, v_l^{(m)})$ and $(u_r^{(m)}, v_r^{(m)})$, these features can be extracted using SIFT, for example. Once found, we can find the relative rotation $R$ and translation $t$. Once found, this uncalibrated stereo system becomes calibrated.
 
