@@ -34,6 +34,7 @@ Once the cameras are calibrated, stereo matching algorithms can be applied to es
 - Converting disparity to depth using the known baseline and focal length.
 - Visualising depth maps for scene understanding.
 
+More in-depth theory in:
 ![Simple Stereo](SimpleStereo.md)
 
 ### Uncalibrated Stereo
