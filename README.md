@@ -34,6 +34,8 @@ Once the cameras are calibrated, stereo matching algorithms can be applied to es
 - Converting disparity to depth using the known baseline and focal length.
 - Visualising depth maps for scene understanding.
 
+![Simple Stereo](SimpleStereo.md)
+
 ### Uncalibrated Stereo
 
 In cases where calibration is unavailable, uncalibrated stereo techniques rely on feature detection and matching to estimate the fundamental matrix. The key steps include:
