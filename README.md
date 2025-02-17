@@ -23,6 +23,9 @@ Stereo calibration is essential in obtaining the intrinsic and extrinsic paramet
 
 Once calibrated, rectification is applied to align the image planes, ensuring epipolar constraints are satisfied.
 
+More in-depth theory in:
+![Camera Calibration](CameraCalibration.md)
+
 ### Simple Stereo
 
 Once the cameras are calibrated, stereo matching algorithms can be applied to estimate depth. This involves:
