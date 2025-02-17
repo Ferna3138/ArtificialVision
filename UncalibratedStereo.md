@@ -2,11 +2,11 @@
 
 The main issue with the Stereo System we mentioned before is that we assume that we are working with a known fixed disparity, which might not be the case if we are not working with a Stereo Vision camera. If we were to take two pictures of an object from two random unknown positions, if we know the intrinsic parameters of the cameras, we can compute the translation and rotation of one camera with respect to the other and therefore, we can compute a 3D reconstruction of the object. This process is known as *Uncalibrated Stereo*.
 
-![Uncalibrated Stereo Left](images/UncalibratedTheory/Uncalibrated%20left.png)
+<img src="images/UncalibratedTheory/Uncalibrated%20left.png" width="20%">  
 
-![Uncalibrated Stereo Right](images/UncalibratedTheory/Uncalibrated%20right.png)
+<img src="images/UncalibratedTheory/Uncalibrated%20right.png" width="20%">
 
-![Uncalibrated Stereo Overview](images/UncalibratedTheory/Uncalibrated%20Scenario.png)
+<img src="images/UncalibratedTheory/Uncalibrated%20Scenario.png" width="50%">
 
 We can define the set of corresponding features (at least 8) in the left and right images: $(u_l^{(m)}, v_l^{(m)})$ and $(u_r^{(m)}, v_r^{(m)})$, these features can be extracted using SIFT, for example. Once found, we can find the relative rotation $R$ and translation $t$. Once found, this uncalibrated stereo system becomes calibrated.
 
@@ -14,7 +14,7 @@ We can define the set of corresponding features (at least 8) in the left and rig
 
 We define an *Epipole* as an image point of origin/pinhole of one camera as viewed by the other camera. The left camera has its own 3D coordinate frame \(O_l\) and so does the right one \(O_r\). It is the translation and rotation from one frame to the other.
 
-![Epipolar Plane](images/UncalibratedTheory/Epipolar%20Plane.png)
+<img src="images/UncalibratedTheory/Epipolar%20Plane.png" width="50%">
 
 The projection of the center of the left camera on the right camera image, and vice versa, are referred to as the **Epipoles**, which are denoted as $(e_l, e_r)$, unique for a given stereo pair. The **Epipolar Plane** is composed of the cameras' origins $(O_l, O_r)$ and the point $P$. The base of the formed triangle passes through the epipoles; therefore, each point in the scene defines a unique epipolar plane.
 
@@ -25,8 +25,7 @@ We can compute a normal vector $n$, which is the cross product between the unkno
 ```math
 n = t \times X_l
 ```
-
-![Epipolar Constraint](images/UncalibratedTheory/Epipolar%20Constraint.png)
+<img src="images/UncalibratedTheory/Epipolar%20Constraint.png" width="50%">
 
 This normal vector should be perpendicular to $X_l$, so we use it as the epipolar constraint:
 
