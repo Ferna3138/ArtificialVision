@@ -14,7 +14,7 @@ We can define the set of corresponding features (at least 8) in the left and rig
 
 We define an *Epipole* as an image point of origin/pinhole of one camera as viewed by the other camera. The left camera has its own 3D coordinate frame \(O_l\) and so does the right one \(O_r\). It is the translation and rotation from one frame to the other.
 
-![Epipolar Plane](Images/UncalibratedTheory/Epipolar%20Plane.png)
+![Epipolar Plane](images/UncalibratedTheory/Epipolar%20Plane.png)
 
 The projection of the center of the left camera on the right camera image, and vice versa, are referred to as the **Epipoles**, which are denoted as $(e_l, e_r)$, unique for a given stereo pair. The **Epipolar Plane** is composed of the cameras' origins $(O_l, O_r)$ and the point $P$. The base of the formed triangle passes through the epipoles; therefore, each point in the scene defines a unique epipolar plane.
 
